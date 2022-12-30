@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="text-align: center;">
+        <h1>My Family Book</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCWtjsTvh7yRIdmY2DPQJ63gUl6gCqzzrmZ4szBtc&s" style="width: 280px; height: 350px;" id="Family_member_image">
+        <h4 id="Family_member_name"></h4>
+            <button id="Nextbutton" onclick="update();">Next</button>
+        <script>
+            var images = [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVC8QrHG8Fk6v_9PQoqUEfV6eBIQVhUzCaS4fmNDH-F5e5_HzOngN-f_Kp7IZAJH1qjY&usqp=CAU",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmqY1COxpAFQpMmhWReBM-AoddVF-vSYTvpKHk9-ySSYxa1N2P2tEFDn8irQI6vMZn2A&usqp=CAU",
+                "https://i.pinimg.com/originals/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg",
+                "https://t4.ftcdn.net/jpg/00/84/21/65/360_F_84216554_EtDFZ7AAhRSzopRFaJKMazLYkJeazZB4.jpg",
+            ];
+            var names = [
+                "Ashwani Kumar",
+                "Kamla Devi",
+                "Samar Sharma",
+                "Umang Sharma",
+            ];
+            var i = 0;
+            function update() {
+                i++;
+                var Numbers_of_family_members_in_array = 14
+                if(i > Numbers_of_family_members_in_array)
+                {
+                    i = 0;
+                }
+                var updatedimage = images[i];
+                var updatedname = names[i];
+                document.getElementById("Family_member_image").src = updatedimage;
+                document.getElementById("Family_member_name").innerHTML = updatedname;
+            }
+        </script>
+    </body>
+</html>            

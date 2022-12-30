@@ -1,0 +1,23 @@
+body{
+    background-color: blueviolet;
+    color: black;
+    border: solid;
+}
+h1{
+    color: aliceblue;
+    text-decoration: underline;
+}
+img{
+    color: blanchedalmond;
+    border: solid;
+}
+h4{
+    color: deepskyblue;
+}
+#Nextbutton{
+    background-color: green;
+    font-weight: bold;
+    color: black;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
